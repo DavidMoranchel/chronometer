@@ -6,37 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 
   <div class="container">
 
-    <div class="logos">
-      <figure>
-        <img class="kodemia" src="/src/images/kodemia_white.png" alt="Kodemia">
-      </figure>
-      <figure>
-        <img class="grin" src="/src/images/grin.png" alt="Grin">
-      </figure>
+    <div class="c-chronometer m-chronometer">
+      <div class="logos">
+        <figure>
+          <img class="htj" src="/src/images/htj.png" alt="Hack The Job">
+        </figure>
+      </div>
+      <div class="logos">
+        <figure>
+          <img class="kodemia" src="/src/images/kodemia_white.png" alt="Kodemia">
+        </figure>
+        <figure>
+          <img class="grin" src="/src/images/grin.png" alt="Grin">
+        </figure>
+      </div>
+
+      <div class="chronometer">
+        <p>
+          <span id="hours">00</span>
+          <span class="cyan">:</span>
+          <span id="minuts">00</span>
+          <span class="cyan">:</span>
+          <span id="seconds">00</span>
+        </p>
+      </div>
+
+      <button id="start" type="button" name="button">Empezar</button>
+      <!-- <h1 class="title">Hack The <span class="cyan">Job</span></h1> -->
     </div>
 
-    <div class="chronometer">
-      <p>
-        <span id="hours">00</span>
-        <span class="green">:</span>
-        <span id="minuts">00</span>
-        <span class="green">:</span>
-        <span id="seconds">00</span>
-      </p>
-    </div>
+    <div class="c-chronometer a-chronometer">
+      <div id="agenda">
+        <i class="fas fa-check"></i>
+      </div>
 
-    <h1 class="title">Hack The <span class="green">Job</span></h1>
-    <!-- <h1 class="title1">Hack The Job</h1>
-    <h1 class="title2">Hack The Job</h1>
-    <h1 class="title3">Hack The Job</h1>
-    <h1 class="title4">Hack The Job</h1> -->
+      <div class="chronometer">
+        <p>
+          <span id="a-hours">00</span>
+          <span class="cyan">:</span>
+          <span id="a-minuts">00</span>
+          <span class="cyan">:</span>
+          <span id="a-seconds">00</span>
+        </p>
+      </div>
+    </div>
   </div>
 
   <script src="./src/js/main.js" charset="utf-8"></script>
+  <script src="./src/js/index.js" charset="utf-8"></script>
+  <script src="./src/js/agenda.js" charset="utf-8"></script>
 </body>
 </html>

@@ -29,11 +29,27 @@ p { font-size: 100px;}
   width: calc(100vw - 20px);
   height: calc(100vh - 20px);
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border: 2px double #33ff00;
+  /* border: 2px double #00ffff; */
+}
+
+.c-chronometer {
+  flex: 50%;
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px double #00ffff;
+}
+.m-chronometer {
+  border-right: 2px double #00ffff;
+}
+.a-chronometer {
+  border-left: none;
 }
 
 .logos {
@@ -49,11 +65,15 @@ figure img {
 
 .kodemia {
   width: 200px;
-  margin-right: 100px;
+  margin-right: 60px;
 }
 
 .grin {
   width: 100px;
+}
+.htj {
+  /* margin-right: 60px; */
+  width: 200px;
 }
 
 .title {
@@ -61,14 +81,45 @@ figure img {
   font-family: "SFT Medium";
 }
 
-.green {
-  color: #33ff00;
-  cmyk: 60 0 100 0;
+.cyan {
+  color: #00ffff;
 }
 /* .title1 { color: white; font-family: "SFT Light"; } */
 /* .title2 { color: white; font-family: "SFT Regular"; } */
 /* .title3 { color: white; font-family: "SFT Medium"; } */
 /* .title4 { color: white; font-family: "SFT Bold"; } */
+
+#start {
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  font-family: 'SFT MEDIUM';
+  background-color: transparent;
+  color: white;
+  border: 1px solid #67fcff;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+.a-item {
+  color: #606060;
+  font-size: 40px;
+  font-family: 'SFT Medium';
+}
+
+.item-active {
+  color: white;
+}
+
+.item-finished {
+  /* color: #606060; */
+  /* text-decoration: line-through;
+  text-decoration-color: #56fdff; */
+}
 
 .chronometer {
   color: white;

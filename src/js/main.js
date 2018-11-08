@@ -1,11 +1,13 @@
-var chr, $h, $m, $s;
-var chrObj = {
-  'main': {
-    'h': 1,
-    'm': 1,
-    's': 3
-  }
-}
+var $mchr, $mh, $mm, $ms, $achr, $ah, $am, $as;
+$mchr = null;
+$mh = document.getElementById('hours');
+$mm = document.getElementById('minuts');
+$ms = document.getElementById('seconds');
+
+$achr = null;
+$ah = document.getElementById('a-hours');
+$am = document.getElementById('a-minuts');
+$as = document.getElementById('a-seconds');
 
 function Chronometer(h,m,s) {
   this.h = h;
@@ -16,61 +18,16 @@ function Chronometer(h,m,s) {
   this.subtractS = () => this.s--
 }
 
-function startApp() {
-  let obj = new Chronometer(chrObj.main.h, chrObj.main.m, chrObj.main.s);
-  chr = startChronometer(obj);
-}
-
-function startChronometer(obj) {
-  $h.innerHTML = format(obj.h);
-  $m.innerHTML = format(obj.m);
-  $s.innerHTML = format(obj.s);
-  return setInterval(() => {
-    if (obj.s > 0) {
-      renderS(obj)
-    } else if (obj.s == 0 && obj.m > 0 && (obj.h > 0 || obj.h == 0)) {
-      renderM(obj);
-    } else if (obj.s == 0 && obj.m == 0 && obj.h > 0) {
-      renderH(obj);
-    } else if (obj.s == 0 && obj.m == 0 && obj.h == 0) {
-      clearInterval(chr);
-      renderFinish();
-    }
-  },1000)
-}
-
-function renderS(obj) {
-  obj.subtractS();
-  $s.innerHTML = format(obj.s);
-  console.log(obj.h,obj.m,obj.s);
-}
-
-function renderM(obj) {
-  obj.subtractM();
-  obj.s = 59;
-  $s.innerHTML = obj.s;
-  $m.innerHTML =  format(obj.m);
-  console.log(obj.h,obj.m,obj.s);
-}
-
-function renderH(obj) {
-  obj.subtractH();
-  obj.m = 59;
-  obj.s = 59;
-  $s.innerHTML = obj.s;
-  $m.innerHTML = obj.m;
-  $h.innerHTML = format(obj.h);
-  console.log(obj.h,obj.m,obj.s);
-}
-
 function format(number) {
   return number.toString().length == 1 ? `0${number}` : `${number}`;
 }
 
 window.onload = () => {
-  console.log('=> start');
-  $h = document.getElementById('hours');
-  $m = document.getElementById('minuts');
-  $s = document.getElementById('seconds');
-  startApp()
+  document.getElementById('start').addEventListener('click',($ev) => {
+    startAppMain(6,30,0);
+    let $e = $arrayEvents[$c];
+    renderTitles();
+    startApp($e.h, $e.m, $e.s);
+    document.getElementById('start').classList.add('hide');
+  });
 }
