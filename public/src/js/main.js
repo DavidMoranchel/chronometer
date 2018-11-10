@@ -24,7 +24,7 @@ function format(number) {
 
 window.onload = () => {
   document.getElementById('start').addEventListener('click',($ev) => {
-    startAppMain(6,30,0);
+    startAppMain(5,45,0);
     let $e = $arrayEvents[$c];
     renderTitles();
     startApp($e.h, $e.m, $e.s);

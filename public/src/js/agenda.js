@@ -1,27 +1,21 @@
 var $c= 0;
 var $arrayEvents = [
   {
-    'title': 'Presentación',
+    'title': 'Taller',
     'h': 1,
-    'm': 0,
-    's': 0
-  },
-  {
-    'title': 'Instalación de entorno',
-    'h': 0,
     'm': 30,
     's': 0
   },
   {
-    'title': 'Taller',
-    'h': 1,
-    'm': 45,
+    'title': 'Explicación de Reto/Break',
+    'h': 0,
+    'm': 15,
     's': 0
   },
   {
     'title': 'Reto',
     'h': 2,
-    'm': 15,
+    'm': 0,
     's': 0
   },
   {

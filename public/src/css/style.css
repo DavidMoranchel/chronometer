@@ -2,7 +2,7 @@
 body, h1, h2, h3, p, figure { margin: 0; }
 body { background-color: black; padding: 10px; }
 h1 { font-size: 70px; }
-p { font-size: 80px; }
+p { font-size: 120px; }
 
 @font-face {
   font-family: "SFD Regular";
@@ -121,8 +121,8 @@ figure img {
 
 .a-item {
   color: #606060;
-  font-size: 30px;
-  
+  font-size: 40px;
+
   font-family: 'SFT Medium';
 }
 
