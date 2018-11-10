@@ -1,40 +1,52 @@
 var $c= 0;
 var $arrayEvents = [
   {
-    'title': 'Taller',
-    'h': 0,
+    'title': 'Presentación',
+    'h': 1,
     'm': 0,
-    's': 4
+    's': 0
   },
   {
-    'title': 'Explicación Reto',
+    'title': 'Instalación de entorno',
     'h': 0,
-    'm': 0,
-    's': 12
+    'm': 30,
+    's': 0
+  },
+  {
+    'title': 'Taller',
+    'h': 1,
+    'm': 45,
+    's': 0
   },
   {
     'title': 'Reto',
-    'h': 0,
-    'm': 0,
-    's': 15
+    'h': 2,
+    'm': 15,
+    's': 0
   },
   {
-    'title': 'Presentación Reto',
-    'h': 0,
+    'title': 'Presentación de Reto',
+    'h': 1,
     'm': 0,
-    's': 15
+    's': 0
   },
   {
-    'title': 'Deliberación de jueces',
+    'title': 'Deliberación de Jueces/Lunch',
     'h': 0,
-    'm': 0,
-    's': 15
+    'm': 30,
+    's': 0
+  },
+  {
+    'title': 'Resultados',
+    'h': 0,
+    'm': 10,
+    's': 0
   },
   {
     'title': 'Entrevistas',
     'h': 0,
-    'm': 0,
-    's': 15
+    'm': 50,
+    's': 0
   }
 ]
 
